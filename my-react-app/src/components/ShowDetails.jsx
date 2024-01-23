@@ -41,7 +41,7 @@ if (!show) {
     <div className="show-details-container">
       <h1>Show Details</h1>
       <h2>{show.name}</h2>
-      <p>{show.summary}</p>
+      <div dangerouslySetInnerHTML={{ __html: show.summary }} />
       <div className="postioning">
         <button onClick={handleBookTicket}>Book Ticket</button>
         <Link to="/" className="backLink">
